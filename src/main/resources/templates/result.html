@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>barApp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>We wrote you information in DB.</h1>
+<p th:text="'id: ' + ${beverage.id}"/>
+<p th:text="'name: ' + ${beverage.name}"/>
+<p th:text="'barCode: ' + ${beverage.barCode}"/>
+<p th:text="'weight: ' + ${beverage.weight}"/>
+<a href="/beverage">Submit another message</a>
+</body>
+</html>
